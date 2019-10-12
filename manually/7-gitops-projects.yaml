@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gitops-projects
+  namespace: gitops-infra
+spec:
+  project: gitops-infra
+  destination:
+    namespace: gitops-infra
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: argo/projects
+    repoURL: 'git@github.com:Dimss/gitops-infra.git'
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
