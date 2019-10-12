@@ -1,0 +1,10 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: gitops-infra
+spec:
+  destinations:
+  - namespace: gitops-infra
+    server: https://kubernetes.default.svc
+  sourceRepos:
+  - git@github.com:Dimss/gitops-infra.git
