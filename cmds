@@ -1,1 +1,1 @@
-kubeseal --controller-namespace gitops-infra  <repo-gitops-infra.yaml >mysealedsecret.json
+kubeseal --controller-namespace gitops-infra  <t.yaml >repo-kbit-devops-sealed-secret.json
