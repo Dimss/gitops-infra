@@ -9,5 +9,7 @@ spec:
   clusterResourceWhitelist:
   - group: 'project.openshift.io'
     kind: Project
+  - group: ''
+    kind: Namespace
   sourceRepos:
   - git@github.com:Dimss/kbit-gitops.git
