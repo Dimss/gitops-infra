@@ -8,3 +8,8 @@ spec:
     server: https://kubernetes.default.svc
   sourceRepos:
   - git@github.com:Dimss/kbit-gitops.git
+  clusterResourceWhitelist:
+  - group: 'project.openshift.io'
+    kind: Project
+  - group: ''
+    kind: Namespace
