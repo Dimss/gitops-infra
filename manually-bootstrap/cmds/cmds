@@ -1,2 +1,2 @@
-kubeseal --controller-namespace gitops-infra  <git-secret-template.yaml >repo-kbit-devops-sealed-secret.json
+kubeseal --controller-namespace gitops-infra  <git-secret-template.yaml > sealed-secret.json
 kubectl auth can-i list project --as system:serviceaccount:gitops-infra:argocd-application-controller --namespace kbit-devops-dev
