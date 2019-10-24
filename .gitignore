@@ -1,2 +1,4 @@
 .idea/
 argo/projects/creds/t.yaml
+manually-bootstrap/cmds/*.yaml
+manually-bootstrap/cmds/*.json
