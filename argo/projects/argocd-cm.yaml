@@ -12,13 +12,13 @@ data:
       sshPrivateKeySecret:
         key: sshPrivateKey
         name: repo-gitops-infra
-      url: git@github.com:Dimss/gitops-infra.git
+      url: "https://github.com/Dimss/gitops-infra.git"
     - insecure: true
       insecureIgnoreHostKey: true
       sshPrivateKeySecret:
         key: sshPrivateKey
         name: repo-kbit-devops
-      url: git@github.com:Dimss/kbit-gitops.git
+      url: "https://github.com/Dimss/kbit-gitops.git"
   resource.customizations: |
     route.openshift.io/Route:
       ignoreDifferences: |

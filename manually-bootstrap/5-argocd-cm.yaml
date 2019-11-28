@@ -10,10 +10,7 @@ data:
   repositories: |
     - insecure: true
       insecureIgnoreHostKey: true
-      sshPrivateKeySecret:
-        key: sshPrivateKey
-        name: repo-gitops-infra
-      url: git@github.com:Dimss/gitops-infra.git
+      url: "https://github.com/Dimss/gitops-infra.git"
   resource.customizations: |
     route.openshift.io/Route:
       ignoreDifferences: |

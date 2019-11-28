@@ -8,4 +8,4 @@ spec:
   - namespace: gitops-infra
     server: https://kubernetes.default.svc
   sourceRepos:
-  - git@github.com:Dimss/gitops-infra.git
+  - "https://github.com/Dimss/gitops-infra.git"
