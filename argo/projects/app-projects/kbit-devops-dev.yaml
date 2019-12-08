@@ -6,10 +6,10 @@ spec:
   destinations:
   - namespace: kbit-devops-dev
     server: https://kubernetes.default.svc
+  sourceRepos:
+  - "https://github.com/Dimss/kbit-gitops.git"
   clusterResourceWhitelist:
   - group: 'project.openshift.io'
     kind: Project
   - group: ''
     kind: Namespace
-  sourceRepos:
-  - "https://github.com/Dimss/kbit-gitops.git"

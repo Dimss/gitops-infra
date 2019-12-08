@@ -7,7 +7,7 @@ spec:
   - namespace: kbit-devops-test
     server: https://kubernetes.default.svc
   sourceRepos:
-  -
+  - "https://github.com/Dimss/kbit-gitops.git"
   clusterResourceWhitelist:
   - group: 'project.openshift.io'
     kind: Project
